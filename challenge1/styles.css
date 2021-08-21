@@ -17,7 +17,7 @@ html{
 
 body{
     font-size: 16px;
-    background-image: url("images/pattern-background-mobile.svg");
+    background-color: red;
     background-repeat: no-repeat;
     background-position:center;
     background-size: cover;
