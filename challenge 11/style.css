@@ -1,0 +1,206 @@
+/*google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Open+Sans&display=swap');
+
+/*variables*/
+:root{
+    /*colors*/
+    /*primary colors*/
+    --Cyan: hsl(179, 62%, 43%);
+    --brightYellow: hsl(71, 73%, 54%);
+
+    /*neutral colors*/
+    --lightGray: hsl(204, 43%, 93%);
+    --grayishBlue: hsl(218, 22%, 67%);
+
+    /*font*/
+    --font: 'Karla', sans-serif;
+}
+
+/*global styles*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: var(--font);
+    background-color: var(--lightGray);
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+a{
+    text-align: none;
+}
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+@media(min-width: 1440px){
+    .container{
+        width: 50%;
+    }
+}
+
+/*content styles*/
+.main{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    
+}
+
+@media(width: 768px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media(width: 820px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media(width: 912px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media(min-width: 1000px){
+    .main{
+        height: 100vh;
+    }
+}
+
+@media(width: 1024px){
+    .main{
+        height: auto;
+    }
+}
+
+.card{
+    padding: 2rem;
+}
+
+.main-card{
+    background-color: #fff;
+    border-start-start-radius: 1rem;
+    border-start-end-radius: 1rem;
+}
+
+.green-text{
+    color: var(--brightYellow);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.gray-text{
+    color: var(--grayishBlue);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+h1{
+    color: var(--Cyan);
+}
+
+.info-cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media(min-width: 1440px){
+    .info-cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.subscription-card{
+    background-color: var(--Cyan);
+    border-end-start-radius: unset;
+}
+
+@media(min-width: 1440px){
+    .subscription-card{
+        border-end-start-radius: 1rem;
+    }
+}
+
+.subscription-card h2{
+    color: var(--lightGray);
+}
+
+.price{
+    font-size: 3rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.subscription-card span{
+    color: var(--lightGray);
+    font-size: 1.6rem;
+    filter: brightness(80%)
+}
+
+.subs-info{
+    color: var(--lightGray);
+}
+
+.button{
+    background-color: var(--brightYellow);
+    color: #fff;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    width: 100%;
+    font-weight: bold;
+}
+
+.about-card{
+    background-color: var(--Cyan);
+    filter: brightness(110%);
+    border-end-end-radius: 1rem;
+    border-end-start-radius: 1rem;
+}
+
+@media(min-width: 1440px){
+    .about-card{
+        border-end-start-radius: unset;
+    }
+}
+
+
+.about-card h2{
+    color: #fff;
+}
+
+.about-card p{
+    color: var(--lightGray);
+    line-height: 1.5;
+}
+
+.footer{
+    background-color: var(--Cyan);
+    padding: 1rem;
+    color: var(--lightGray);
+    text-align: center;
+}
+
+.footer a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
